@@ -5,7 +5,6 @@
  */
 package com.iesvdc.acceso.excelapi.excelapi;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -42,28 +41,12 @@ public class LibroTest {
     /**
      * Test of getHojas method, of class Libro.
      */
-    /*@Test
+    @Test
     public void testGetHojas() {
-        System.out.println("getHojas");
+        System.out.println("getNombreArchivo");
         Libro instance = new Libro();
-        List<Hoja> expResult = new ArrayList<Hoja>();
-        Hoja h1 = new Hoja("hoja1",5,5);
-        Hoja h2 = new Hoja("hoja2",10,10);
-        for(int i=0;i<6;i++){
-            for(int j=0;j<6;j++){
-                h1.setDato((char)('A'+j)+" "+(i+1), i, j);
-            }
-        }
-        for(int i=0;i<10;i++){
-            for(int j=0;j<6;j++){
-                h2.setDato((char)('A'+j)+" "+(i+1), i, j);
-            }
-        }
-        expResult.add(h1);
-        expResult.add(h2);
-        instance.addHoja(h1);
-        instance.addHoja(h2);
-        List<Hoja> result = instance.getHojas();
+        String expResult = "nuevo.xlsx";
+        String result = instance.getNombreArchivo();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -85,16 +68,16 @@ public class LibroTest {
     /**
      * Test of getNombreArchivo method, of class Libro.
      */
-    /*@Test
+    @Test
     public void testGetNombreArchivo() {
         System.out.println("getNombreArchivo");
         Libro instance = new Libro();
-        String expResult = "nuevo.xslx";
+        String expResult = "nuevo.xlsx";
         String result = instance.getNombreArchivo();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    }*/
+    }
 
     /**
      * Test of setNombreArchivo method, of class Libro.
@@ -187,15 +170,15 @@ public class LibroTest {
     /**
      * Test of load method, of class Libro.
      */
-    @Test
+    
+    /*@Test
     public void testLoad_String() {
         System.out.println("load");
-        String filename = "";
-        Libro instance = new Libro();
-        instance.load(filename);
+            Libro instance = new Libro();
+            instance.load();
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    }
+    }*/
 
     /**
      * Test of save method, of class Libro.
@@ -226,7 +209,8 @@ public class LibroTest {
     /**
      * Test of save method, of class Libro.
      */
-    @Test
+    
+    /*@Test
     public void testSave_String() throws Exception {
         System.out.println("save");
         String filename = "nuevo.xlsx";
@@ -234,6 +218,6 @@ public class LibroTest {
         instance.save(filename);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    }
+    }*/
     
 }
